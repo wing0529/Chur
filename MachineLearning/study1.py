@@ -63,26 +63,25 @@ B_values = [item[4] for item in data]
 #data dataframe로 저장    
 df = pd.DataFrame(data, columns=['judge','pH', 'R', 'G', 'B'])
 
-# DataFrame을 Excel 파일로 저장
+# DataFrame을 csv 파일로 저장
 excel_filename = 'output_data.csv'
-#df.to_excel(excel_filename, index=False)
 df.to_csv(excel_filename, index=False)
 
 df.isnull().sum()
 
 pd.get_dummies(df['judge'])
 
-# DataFrame을 섞습니다.
+# DataFrame을 섞기
 df_shuffled = shuffle(df, random_state=42)
 
-# 데이터를 훈련, 검증, 테스트 세트로 나눕니다.
-train_size = 0.6  # 훈련에 60% 할당
-valid_size = 0.2  # 검증에 20% 할당, 나머지 20%는 테스트에 할당됩니다.
+# 데이터를 훈련, 검증, 테스트 세트로 나누기
+train_size = 0.6  # 훈련에 60%
+valid_size = 0.2  # 검증에 20%, 나머지 20%는 테스트
 
 train, temp = train_test_split(df_shuffled, train_size=train_size, random_state=42)
 valid, test = train_test_split(temp, test_size=valid_size / (1 - train_size), random_state=42)
 
-# 각 세트에 대해 독립 변수 (X)와 종속 변수 (y)를 분리합니다.
+# 각 세트에 대해 독립 변수 (X)와 종속 변수 (y)를 분리
 X_train, y_train = train[['R', 'G', 'B']], train['judge']
 X_valid, y_valid = valid[['R', 'G', 'B']], valid['judge']
 X_test, y_test = test[['R', 'G', 'B']], test['judge']
