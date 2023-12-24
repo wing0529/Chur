@@ -11,10 +11,10 @@
 ### 🧑‍🤝‍🧑 맴버 구성
 |이름|역할|
 |:---:|:---:|
-|[김나래](https://github.com/wing0529)|<a href="https://github.com/wing0529/GRED_Detection_Device/Chur/RaspberryPi"> Raspberry Pi </a> & <a href="https://github.com/wing0529/GRED_Detection_Device/Chur/MachineLearning">Machine Learning</a>|
-|박세영|<a href="https://github.com/wing0529/GRED_Detection_Device/Chur/WEB">WEB</a> & <a href="https://github.com/wing0529/GRED_Detection_Device/Chur/RaspberryPi">Raspberry Pi</a>|
-|박소영|<a href="https://github.com/wing0529/GRED_Detection_Device/Chur/WEB">WEB</a>|
-|송수민|<a href="https://github.com/wing0529/GRED_Detection_Device/Chur/3DModeling">3D Modeling </a> & Financial |
+|[김나래](https://github.com/wing0529)|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi"> Raspberry Pi </a> & <a href="[https://github.com/wing0529/GRED_Detection_Device/Chur/MachineLearning](https://github.com/wing0529/GRED_Detection_Device/tree/Chur/MachineLearning)">Machine Learning</a>|
+|박세영|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">WEB</a> & <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi">Raspberry Pi</a>|
+|박소영|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">WEB</a>|
+|송수민|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/3DModeling">3D Modeling </a> & Financial |
 
 
 ### ⚙️ 개발 환경
@@ -24,17 +24,17 @@
 - **Framework** : 
 
 ## 📌 주요 기능
-#### WEB - <a href="https://github.com/wing0529/GRED_Detection_Device/Chur/WEB">이동</a>
+#### WEB - <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">이동</a>
 - Design
 - Server
 - WebAPP
-#### RaspberryPi - <a href="https://github.com/wing0529/GRED_Detection_Device/Chur/RaspberryPi">이동</a>
+#### RaspberryPi - <a href="[https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi](https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi)">이동</a>
 - RaspberryPi Camera V2 - Button - LED 
 - LCD
-#### MachineLearning - <a href="https://github.com/wing0529/GRED_Detection_Device/Chur/MachineLearning">이동</a>
+#### MachineLearning - <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/MachineLearning">이동</a>
 - Scikit-Learn
 - JupyterNotebook
-#### 3D Modeling -<a href="https://github.com/wing0529/GRED_Detection_Device/Chur/3DModeling">이동</a>
+#### 3D Modeling -<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/3DModeling">이동</a>
 - 외관 설계
 - Onshape
 
