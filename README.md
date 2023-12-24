@@ -8,19 +8,20 @@
 ## 🕰️ 개발 기간
 * 23.09.01일 - 23.12.15일
 
-### 🧑‍🤝‍🧑 맴버구성
- - 김나래
- - 박세영
- - 박소영
- - 송수민
+### 🧑‍🤝‍🧑 맴버 구성
+|이름|역할|
+|:---:|:---:|
+|[김나래](https://github.com/wing0529)|<a href="https://github.com/wing0529/GRED_Detection_Device/Chur/RaspberryPi"> Raspberry Pi </a> & <a href="https://github.com/wing0529/GRED_Detection_Device/Chur/MachineLearning">Machine Learning</a>|
+|박세영|<a href="https://github.com/wing0529/GRED_Detection_Device/Chur/WEB">WEB</a> & <a href="https://github.com/wing0529/GRED_Detection_Device/Chur/RaspberryPi">Raspberry Pi</a>|
+|박소영|<a href="https://github.com/wing0529/GRED_Detection_Device/Chur/WEB">WEB</a>|
+|송수민|<a href="https://github.com/wing0529/GRED_Detection_Device/Chur/3DModeling">3D Modeling </a> & Financial |
+
 
 ### ⚙️ 개발 환경
 - `Python`
 - `HTML`
-- **IDE** : STS 3.9
-- **Framework** : Springboot(2.x)
-- **Database** : Oracle DB(11xe)
-- **ORM** : Mybatis
+- **IDE** : 
+- **Framework** : 
 
 ## 📌 주요 기능
 #### WEB - <a href="https://github.com/wing0529/GRED_Detection_Device/Chur/WEB">이동</a>
