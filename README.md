@@ -28,7 +28,7 @@
 - Design
 - Server
 - WebAPP
-#### RaspberryPi - <a href="[https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi](https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi)">이동</a>
+#### RaspberryPi - <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi">이동</a>
 - RaspberryPi Camera V2 - Button - LED 
 - LCD
 #### MachineLearning - <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/MachineLearning">이동</a>
