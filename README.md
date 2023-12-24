@@ -13,7 +13,7 @@
 
 |이름|역할|
 |:---:|:---:|
-|[김나래](https://github.com/wing0529)|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi"> Raspberry Pi </a> & <a href="[https://github.com/wing0529/GRED_Detection_Device/Chur/MachineLearning](https://github.com/wing0529/GRED_Detection_Device/tree/Chur/MachineLearning)">Machine Learning</a>|
+|[김나래](https://github.com/wing0529)|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi"> Raspberry Pi </a> & <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/MachineLearning">Machine Learning</a>|
 |박세영|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">WEB</a> & <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi">Raspberry Pi</a>|
 |박소영|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">WEB</a>|
 |송수민|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/3DModeling">3D Modeling </a> & Financial |
