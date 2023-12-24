@@ -8,7 +8,7 @@
 ## 🕰️ 개발 기간
 * 23.09.01일 - 23.12.15일
 
-### 🧑‍🤝‍🧑 맴버 구성
+### 🧑‍🤝‍🧑 Chur
 |이름|역할|
 |:---:|:---:|
 |[김나래](https://github.com/wing0529)|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi"> Raspberry Pi </a> & <a href="[https://github.com/wing0529/GRED_Detection_Device/Chur/MachineLearning](https://github.com/wing0529/GRED_Detection_Device/tree/Chur/MachineLearning)">Machine Learning</a>|
