@@ -22,8 +22,8 @@
 ## ⚙️ 개발 환경
 - `Python`
 - `HTML`
-- **IDE** : 
-- **Framework** : 
+- 'CSS'
+- 'JavaScript'
 
 
 ## 📌 주요 기능
