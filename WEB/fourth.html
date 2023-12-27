@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>4번_센서값 받기</title>
+  <style>
+    body{
+      margin:auto;
+      text-align: center;
+      width:360px;
+      height:640px;
+      border:1px solid black;
+      position:relative;
+      top:50px;
+      z-index:1;
+    }
+     h1{
+        margin: 10px 15px 40px 25px;
+        font-size: 20px;
+    }
+    h2{
+      color: #444444;
+      font-size: 20px;
+    }
+    #method{
+      background-color:lightpink;
+      height:250px;
+      width:340px;
+      text-align: center;
+      color: #444444;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    #scrollBox{
+      height:220px;
+      width: 330px;
+      overflow:auto;
+    }
+      #explain{
+      background-color:transparent;
+      height:270px;
+      width:330px;
+      text-align: left;
+      color: #444444;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      }
+
+    button {
+      height: 50px;
+      width: 255px;
+      border-width: 1.5px;
+      border-radius: 5px;
+      margin-right : 45px;
+      margin-top : -20px;
+      background-color: lightpink;
+      display: inline-block;
+    }
+		#btn_group button:hover{
+        color:white;
+        background-color: pink;
+    }
+       .image-container {
+      position: absolute;
+      top: 0px;
+      right: 50px;
+    }
+    
+.image-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-top:15px;
+  transition: box-shadow 0.3s ease; /* 그림자 변경을 부드럽게 */
+}
+
+
+    .image-button img {
+      transition-duration: 0.5s;
+    }
+    
+  .image-button:active img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.image-button:hover img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+  </style>
+</head>
+<body>
+  <h1>식도 건강 지킴이 </h1>
+  <h2>센서로 pH값을 측정하세요.</h2>
+     <div class="image-container">
+  <button class="image-button" onclick="location.href='/'">
+    <img src="{{ url_for('static', filename='chur.png') }}" alt="로고" width="35">
+  </button>
+</div>
+    <div id = "method"><p>[측정방법]</p>
+      <div id="scrollBox">
+    <div id = "explain">① 구강 내 타액을 소량 채취하세요.<br>
+
+      ② 스포이드에 타액을 조금 담아주세요.<br>
+      
+      ③ pH 시험지를 슬라이드 칸에 넣어주세요.<br>
+      
+      ④ 버튼을 누른 후, 시험지에 스포이드 속 타액을 검은색 선이 그어져 있는 부분에 떨어뜨려주세요.<br>
+      
+      ⑤ 슬라이드를 밀어 시험지를 기기 속으로 넣어주세요.<br>
+      
+      ⑥ 10초 후 사진이 찍히니 기다려주세요.<br>
+      
+      ⑦ LCD 화면 혹은 아래 촬영 완료 버튼을 눌러서 진단 결과를 확인해보세요!<br><br>
+      
+       
+      
+      ※주의사항※<br>
+      
+      - 타액 체취 시 거품이 최대한 나지 않도록 해주세요. 매우 적은 양을 채취해도 측정 가능해요.<br>
+      
+      - 재측정 시 시험지를 놓는 곳을 한번 닦고 사용해주세요.</div></div></div>
+    
+  <img src="{{ url_for('static', filename='device.jpg') }}" alt="디바이스에서 촬영버튼쪽 찍은 사진" width="200" height="200"><br>
+  <!-- 입력 버튼 -->
+    <ul id = "btn_group">
+  <button id="btn" && onclick="location.href='index.html'">촬영 완료</button>
+    </ul>
+
+</body>
+</html>

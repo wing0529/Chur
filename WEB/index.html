@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <title>6-1번 페이지</title>
+  <style>
+body{
+    margin:auto;
+    text-align: center;
+    width:360px;
+    height:640px;
+    border:1px solid black;
+    position:relative;
+    top:50px;
+    z-index:1;
+    }
+       h1{
+                color: #444444;
+                margin: 10px 15px 40px 25px;
+                font-size: 20px;
+      }
+      h2{
+                color: #444444;
+                margin: 10px auto 35px;
+                font-size: 20px;
+      }
+ div{
+          border: 1px solid black;
+          height:380px;
+          width:300px;
+          text-align: center;
+          color: #444444;
+          margin: auto;
+          font-size: 15px;
+          /*margin-bottom: -24px;*/
+      }
+      .a {
+          background-color:#558ED5;
+          height:80px;
+          width:160px;
+          text-align: center;
+          color: #ffffff;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 70px;
+          border: none; 
+      }
+      button{
+        width:160px;
+        height:70px;
+        padding: 5px;
+        font-size: 20px;
+        border-style: solid;
+        border-width: 1.5px;
+        border-color: black;
+        
+      }    
+      .button{
+           background-color: lightgray;
+      }
+      .btn{
+          margin: 10px;
+          background-color: #D2F3F8;
+    }
+    .button:hover{
+        color:white;
+        background-color:lightslategray;
+    }
+      .btn:hover{
+        color:white;
+        background-color: lightslategray;
+    }
+ .image-container {
+  position: absolute;
+  border: none;
+  top: 15px; /* 원하는 위치로 조정 */
+  right: -100px; /* 원하는 위치로 조정 */
+}
+.image-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  transition: box-shadow 0.3s ease; /* 그림자 변경을 부드럽게 */
+}
+
+
+    .image-button img {
+      transition-duration: 0.5s;
+    }
+    
+  .image-button:active img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.image-button:hover img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+.c{
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+    </style>
+    </head>
+    <body>
+        <h1>식도 건강 지킴이</h1>
+        
+        
+        
+        <div class='b' style="margin-top:80px;" >
+          <div class='a' id="senserValue">측정중</div>
+          <div class="image-container">
+            <button class="image-button" onclick="location.href='/'">
+              <img src="{{ url_for('static', filename='chur.png') }}" alt="로고" width="35">
+            </button>
+          </div>
+          <div class='c' id="resultValue">측정 중 입니다. <p> 잠시만 기다려주세요.</div>
+        </div>
+        <button class="button"  style="margin-left:-20px; margin-top:30px;"  onclick="location.href='./fourth.html'">다시<br>측정하기</button>
+          <button class="btn"  style="margin-right:-20px;"  onclick="location.href='fifth2.html'">
+          역류성 식도염 <br>알아보기
+        </button>
+      <script >
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('update_value', function(data) {
+
+            var element = document.querySelector('.a');
+            var resultMessage='';
+            if (data.value ==='danger') {
+                console.log("위험");
+                document.getElementById('senserValue').innerHTML = '위험';
+                element.style.backgroundColor = '#ff0000';
+                resultMessage='당신의 pH 결과는 위험에 해당합니다.';
+            } else if (data.value ==='warning') {
+                console.log("주의");
+                document.getElementById('senserValue').innerHTML = '주의';
+                element.style.backgroundColor = '#FF9900';
+                resultMessage='당신의 pH 결과는 주의에 해당합니다.';
+            } else if (data.value === 'safe') {
+                console.log("안심");
+                document.getElementById('senserValue').innerHTML = '안심';
+                element.style.backgroundColor = '#00b050';
+                resultMessage='당신의 pH 결과는 안심에 해당합니다.';
+            }
+            /*else if (data.value === 'ing') {
+                console.log("측정 중");
+                document.getElementById('senserValue').innerHTML = '측정 중';
+                element.style.backgroundColor = '#558ED5';
+                resultMessage='측정 중 입니다. <p> 잠시만 기다려주세요.';
+            }*/
+            else  {
+                console.log("Error");
+                document.getElementById('senserValue').innerHTML = 'Error';
+                element.style.backgroundColor = '#595959';
+                resultMessage='해당하는 결과값이 없습니다. <p> 다시 한번 측정하세요. <p> 재측성 시에도 같은 결과라면 <br> 병원에 방문하세요';
+            }
+            
+            document.getElementById('resultValue').innerHTML = resultMessage;
+        });
+      </script>
+    </body>
+</html>

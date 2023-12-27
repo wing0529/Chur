@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>sensorapplication</title>
+  <style>
+    body{
+	    margin:auto;
+      text-align: center;
+        width:360px;
+ height:640px;
+ border:1px solid black;
+ position:relative;
+ top:50px;
+ z-index:1;
+    }
+
+    button {
+ 	  font-size: 20px;
+	  background-color: lightpink;
+	  border-radius: 40px 40px 40px 40px;		
+  	  border-style:none;
+	  border-width: 4px;
+  	  border-bottom-color: #ffa4b3;
+      border-bottom-style: ridge;
+      border-top-color: lightpink;
+      border-left-color: lightpink;
+      border-right-color:#ffa4b3;
+      border-right-style:ridge;
+        padding: 20px 80px;
+    position:relative;
+    right:-8px ;
+    top: 390px;
+    }
+    #btn{
+      margin:5px;
+    }
+		#btn_group button:hover{
+        color:white;
+        background-color: pink;
+    }
+      h1{
+          position:absolute;
+          text-align: left;
+          font-size: 14px;
+          color: #444444;
+          top: 10px;
+          left:20px;
+      }
+      h4{
+          position:absolute;
+          left:140px;
+          top:342px;
+      }
+       .image-container {
+      top: 20px;
+      right: 15px;
+      }
+  </style>
+
+</head>
+<body>
+    <h1>2023-2 광운대학교 참빛설계
+    </h1>
+  <h4>식도 건강 지킴이</h4>
+    <img src="{{ url_for('static', filename='chur.png') }}" style="float: right; margin-right: 15px; margin-top: 15px;" width="35" >
+  <div>
+    <ul id="btn_group">
+        <il><button id="btn" && onclick="location.href='second.html'"> <b>시작하기</b>
+          </button></il>
+    </ul>
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="chur"
+           style="border: 2px solid; border-radius: 1000px; width: 250px; height:230px;"/>
+     
+      
+  </div>
+</body>
+</html>

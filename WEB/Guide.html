@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>6-2번 페이지</title>
+  <style>
+body{
+    margin:auto;
+    text-align: center;
+    width:360px;
+    height:640px;
+    border:1px solid black;
+    position:relative;
+    top:50px;
+    z-index:1;
+    }
+      h1{
+        color: #444444;
+           margin: 15px auto 40px;
+        font-size: 20px;
+    }
+      h2{
+                color: #444444;
+                margin: 10px auto 20px;
+               font-size: 15px;
+    }
+  div#title{
+        font-size: 20px;
+        border: thin solid black;
+        margin:10px;
+        text-align:center;
+        background-color:antiquewhite;
+        font-weight:600;
+        height: 25px;
+    }
+    div#how{
+        background-color:floralwhite;
+        height:360px;
+        width:320px;
+        text-align: center;
+        color: #444444;
+        margin-left:20px;
+        font-weight:600;
+        font-size: 20px;
+      }
+      #explain{
+        font-size: 15px;
+        margin:10px;
+        height:50px;
+        text-align:center;
+        background-color:antiquewhite;
+      }
+      
+      button {
+ 	  font-size: 20px;
+	  background-color: lightsteelblue;	
+  	  border-style:double;
+	  border-width: 4px;
+      border-right-style:ridge;
+      padding: 20px 90px;
+      margin-left :-35px;
+      margin-top :-10px;
+      text-align:center;
+     
+    }
+		#btn_group button:hover{
+        color:white;
+        background-color: lightslategray;
+    }
+     .image-container {
+      position: absolute;
+      top: 25px;
+      right: 15px;
+    }
+    
+.image-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  transition: box-shadow 0.3s ease; /* 그림자 변경을 부드럽게 */
+}
+
+
+    .image-button img {
+      transition-duration: 0.5s;
+    }
+    
+  .image-button:active img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.image-button:hover img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+    </style>
+    </head>
+    <body>
+        <h1>식도 건강 지킴이</h1>
+        <div class="image-container">
+<button class="image-button" onclick="location.href='/'">
+        <img src="{{ url_for('static', filename='chur.png') }}" alt="로고" width="35">
+    </button> 
+    </div>
+        <div id = "title">위식도 역류 질환 예방 가이드</div>
+        <div id = "how"><p>완화방법</p>
+        <img src="{{ url_for('static', filename='prevent.png') }}" width="300" height="300"><br></div>
+        <div id = "explain">위 이미지를 참고하여 생활습관을 개선한다면 위식도 역류 진환을 예방하는데 도움이 될 것이다.</div>
+        <ul id="btn_group">
+      <il><button id="btn" && onclick="location.href='fifth2.html'"> 이전으로 </button></il>
+    </ul>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>senventh</title>
+  <style>
+    body{
+	    margin:auto;
+      text-align: center;
+        width:360px;
+ height:640px;
+ border:1px solid black;
+ position:relative;
+ top:50px;
+ z-index:1;
+    }
+    button {
+ 	    font-size: 20px;
+	  background-color: lightsteelblue;	
+  	  border-style:double;
+	  border-width: 4px;
+      border-right-style:ridge;
+        padding: 20px 80px;
+    position:relative;
+    right:20px ;
+    top: 357px;
+        text-align:center;
+     
+    }
+      
+    #btn{
+      margin:12px;
+    }
+		#btn_group button:hover{
+        color:white;
+        background-color: lightslategray;
+    }
+      h3{
+          position:relative;
+          top: 150px;  
+          text-align: center;
+          font-family: 'Noto Sans KR', sans-serif;
+      }
+      
+      
+      #end{
+          font-size: 20px;
+         margin:auto;
+                width: 320px;
+                height: 0px;
+                position:relative;
+          bottom:30px;
+          text-align:center;
+          background-color:antiquewhite;
+          font-weight:600;
+      }
+      
+      .image-container {
+      position: absolute;
+      top: -342px;
+      right: -5px;
+    }
+    
+.image-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  transition: box-shadow 0.3s ease; /* 그림자 변경을 부드럽게 */
+}
+
+
+    .image-button img {
+      transition-duration: 0.5s;
+    }
+    
+  .image-button:active img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.image-button:hover img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+
+  </style>
+
+</head>
+<body>
+<div class="image-container">
+<button class="image-button" onclick="location.href='/'">
+        <img src="{{ url_for('static', filename='chur.png') }}" alt="로고" width="35">
+    </button> 
+    </div>
+    <ul id="btn_group">
+      <il><button id="btn" && style = "padding: 20px 57px" && onclick="location.href='fourth.html'"> 다시 측정하기 </button></il>
+      <il><button id="btn" && onclick="location.href='/'">  처음으로 </button></il>
+    </ul>
+<div id = "end">
+      pH측정 결과<br><br>
+ pH3 이하로 오류가 의심됩니다. <br>
+      재측정을 권고드립니다.
+      </div>
+       
+</body>
+</html>

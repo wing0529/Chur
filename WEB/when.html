@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>6-2번 페이지</title>
+  <style>
+    body{
+        margin:auto;
+        text-align: center;
+        width:360px;
+        height:640px;
+        border:1px solid black;
+        position:relative;
+        top:50px;
+        z-index:1;
+    }
+    h1{
+        color: #444444;
+        margin: 10px auto 50px 5px;
+        font-size: 20px;
+    }
+    div#title{
+        font-size: 20px;
+        border: thin solid black;
+        margin:10px;
+        text-align:center;
+        background-color:antiquewhite;
+        font-weight:600;
+        height:25px;
+    }
+    div#how{
+        background-color:floralwhite;
+        height:400px;
+        width:320px;
+        text-align: left;
+        padding : 1px;
+        color: #444444;
+        margin:auto;
+        font-size: 19px;
+    }
+ .image-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  transition: box-shadow 0.3s ease; /* 그림자 변경을 부드럽게 */
+}
+
+
+    .image-button img {
+      transition-duration: 0.5s;
+    }
+    
+  .image-button:active img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.image-button:hover img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+      .image-container {
+  position: absolute;
+  border: none;
+  top: 15px; 
+  left: 310px;
+}
+    .previous-button {
+        font-size: 20px;
+        background-color: lightsteelblue;    
+        border-style:double;
+        border-width: 4px;
+        border-right-style:ridge;
+        padding: 20px 90px;
+        margin-left :-40px;
+        text-align:center;
+    }
+      #btn_group button:hover{
+        color:white;
+        background-color: lightslategray;
+    }
+  </style>
+</head>
+<body>
+    <h1>식도 건강 지킴이  <div class="image-container">
+<button class="image-button" onclick="location.href='/'">
+    <img src="{{ url_for('static', filename='chur.png') }}" width="35" ></button></div>
+</h1>
+    <div id="title">역류성 식도염에 걸렸을 때</div>
+    <div id="how"><p>위 식도 역류질환은 만성적인 질환이며, 치료를 중단하거나 약물의 용량을 감량하면 증상이 재발하는 경우가 많아 지속적인 치료와 관리를 필요로 한다. </p><p>① 식후에 바로 눕지 않도록 하며, 취침시간 전의 음식 섭취는 피하도록 한다.<br></p><p>② 음주는 취침 중에도 위산이 계속 분비되도록 하며, 위 내용물이 식도로 역류하기 쉬운 환경을 조장할 수 있으므로 술은 제한하는 것이 좋다. </p><p>③ 흡연은 침 분비를 감소시키기 때문에 위식도 역류질환에 해로우므로 제한하는 것이 좋다.</p></div>
+    <ul id = "btn_group">
+        <il><button class="previous-button" onclick="location.href='fifth2.html'"> 이전으로 </button></il>
+    </ul>
+</body>
+</html>

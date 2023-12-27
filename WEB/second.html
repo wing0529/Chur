@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>2번 페이지</title>
+  <style>
+body{
+    margin:auto;
+    text-align: center;
+    width:360px;
+    height:640px;
+    border:1px solid black;
+    position:relative;
+    top:50px;
+    z-index:1;
+    }
+      h1{
+                color: #444444;
+                margin: 15px auto 100px;
+                font-size: 20px;
+      }
+      h2{
+                color: #444444;
+                text-align:left;
+                margin : 20px 20px 200px 20px; /*상우하좌*/
+                font-size: 15px;
+      }
+  button {
+      height : 70px;
+      width:250px;
+      margin: auto;
+      background-color:lightpink;
+      color:black;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      border-bottom-style: ridge;
+      border-top-color: lightpink;
+      border-left-color: lightpink;
+      border-right-color:#ffa4b3;
+      border-bottom-color: #ffa4b3;
+      border-right-style:ridge;
+      border-radius: 40px;        
+  }
+   #btn{
+       margin:4px;
+       margin-left: -29px;
+    }
+   #btn_group button:hover {
+      color: white;
+      background-color: pink;
+    }
+    
+    .image-container {
+      position: absolute;
+      top: 15px;
+      right: 50px;
+    }
+    
+.image-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  transition: box-shadow 0.3s ease; /* 그림자 변경을 부드럽게 */
+}
+
+
+    .image-button img {
+      transition-duration: 0.5s;
+    }
+    
+  .image-button:active img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.image-button:hover img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+  </style>
+</head>
+<body>
+  <h1>식도 건강 지킴이</h1>
+  <h2>
+   
+    <p>· 역류성 식도염(위식도 역류질환)을 자가 진단 키트로 간편하게 진단하는 어플리케이션 입니다.</p>
+    <p>· pH시험지를 이용한 자가 진단 키트로, 시험지의 색깔을 카메라로 촬영 후 결과를 알려주는 키트입니다.</p>
+ 
+    </h2>
+    
+<div class="image-container">
+<button class="image-button" onclick="location.href='/'">
+        <img src="{{ url_for('static', filename='chur.png') }}" alt="로고" width="35">
+    </button> 
+    </div>
+  <div>
+      <ul id="btn_group">
+    <button id="btn" && onclick="location.href='fourth.html'"> 측정하기 </button>
+      </ul>
+  </div>
+</body>
+</html>

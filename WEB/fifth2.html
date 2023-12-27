@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>choose</title>
+  <style>
+    body{
+	    margin:auto;
+      text-align:center;
+        width:360px;
+ height:640px;
+ border:1px solid black;
+ position:relative;
+ top:50px;
+ z-index:1;
+    }
+
+    button {
+ 	    font-size: 15px;
+	  background-color: lightsteelblue;
+  	  border-style:double;
+	  border-width: 4px;
+      border-right-style:ridge;
+        padding: 20px 40px;
+    position:relative;
+    right:-7px ;
+    top: 380px;
+        text-align:justify;
+     
+    }
+      button + button{
+margin-top: 1rem;
+
+}
+
+
+    #btn{
+      margin:5px;
+    }
+		#btn_group button:hover{
+        color:white;
+        background-color: lightslategray;
+    }
+      div{
+          width:345px;
+          height:120px;
+      }
+      
+      #title{
+          font-size: 25px;
+          border: thin solid black;
+         margin:auto;
+                width: 90px;
+                height: 40px;
+                position: relative;
+          bottom:370px;
+          left:-118px;
+          text-align:center;
+          background-color:antiquewhite;
+          font-weight:600;
+      }
+      #definition{
+          position:relative;
+          bottom:195px;
+          left:8px;
+          background-color:floralwhite;
+          font-size:18px;
+          text-align: justify;
+      }
+      #introduction{
+          font-size: 25px;
+          border: thin solid black;
+         margin:auto;
+                width: 170px;
+                height: 40px;
+                position:absolute;
+          bottom:400px;
+          left: 9px;
+          text-align:center;
+          background-color:antiquewhite;
+          font-weight:600;
+      }
+       #introduction1{
+          position:relative;
+          bottom:176px;
+          left:8px;
+          background-color:floralwhite;
+          font-size:20px;
+          text-align: justify;
+           margin-bottom: 50px;
+        text-align:center;
+           letter-spacing: 4px;
+           line-height: 1.8;
+      }
+      .image-container {
+      position: absolute;
+      top: -365px;
+      right: 22px;
+    }
+    
+.image-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  transition: box-shadow 0.3s ease; /* 그림자 변경을 부드럽게 */
+}
+
+
+    .image-button img {
+      transition-duration: 0.5s;
+    }
+    
+  .image-button:active img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.image-button:hover img {
+  margin-left: 1px;
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px black;
+}
+  </style>
+    
+
+</head>
+<body>
+    
+<div class="image-container">
+<button class="image-button" onclick="location.href='/'">
+        <img src="{{ url_for('static', filename='chur.png') }}" alt="로고" width="35">
+    </button> 
+    </div>
+    
+  <div>
+    <div style = "width: 300px; height: 250px; margin: 0px auto; ">
+        <ul id = "btn_group">
+                <button style = "margin-right: 30px; margin-top:-10px; padding: 20px 39px; "  && onclick="location.href='eleventh.html'"> 
+                    역류성 식도염의 증상 </button>
+                
+                <button style = "margin-right: 30px;  padding: 20px 22px; " && onclick="location.href='Guide.html'">  위식도 역류 질환 완화가이드 </button>
+                
+                <button style = "margin-right: 30px; padding: 20px 27px; " && onclick="location.href='when.html'">  역류성 식도염에 걸렸을 때 </button>
+            </ul>
+                
+            </div>
+<div id = "definition">
+      우리가 흔히 역류성 식도염이라고 알고 있는 질환의 정식 명칭은 ‘위식도 역류성 질환(Gastro-esophagus reflux disease)’이다. 위식도 역류성 질환은 위 내용물이 소량씩 식도로 역류하고, 이러한 역류의 과정이 반복되어 식도 점막이 손상되면서 염증이 나타나는 질환을 의미한다.
+      </div>
+      <div id = "title">정의</div>
+      <div id = "introduction">각 등급 소개</div>
+      <div id = "introduction1">
+         4.8 ~ 5.6 위험<br>
+         5.7 ~ 6.0 주의<br>
+         6.0 ~ 6.4 정상<br>
+         이 외 범위는 모두 ERROR
+      </div>
+      
+  </div>
+    
+   
+</body>
+</html>
