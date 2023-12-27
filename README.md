@@ -16,7 +16,7 @@
 |[김나래](https://github.com/wing0529)|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi"> Raspberry Pi </a> & <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/MachineLearning">Machine Learning</a>|
 |박세영|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">WEB</a> & <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi">Raspberry Pi</a>|
 |박소영|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">WEB</a>|
-|송수민|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/3DModeling">3D Modeling </a> & Financial |
+|송수민|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/3DModeling">3D Modeling </a> & Finance 💲 |
 
 
 ## ⚙️ 개발 환경
@@ -28,15 +28,12 @@
 
 ## 📌 주요 기능
 #### WEB - <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">이동</a>
-- Design
-- Server
-- WebAPP
+- app.py
 #### RaspberryPi - <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi">이동</a>
-- RaspberryPi Camera V2 - Button - LED 
-- LCD
+- Combine.py
 #### MachineLearning - <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/MachineLearning">이동</a>
-- Scikit-Learn
-- JupyterNotebook
+- study.py
+- predict.py
 #### 3D Modeling -<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/3DModeling">이동</a>
 - Onshape
 
