@@ -19,7 +19,7 @@
 |:---:|:---:|
 |[김나래](https://github.com/wing0529)|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi"> Raspberry Pi </a> & <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/MachineLearning">Machine Learning</a>|
 |[박세영](https://github.com/Qazxm)|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">WEB</a> & <a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/RaspberryPi">Raspberry Pi</a>|
-|박소영|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">WEB</a>|
+|[박소영](https://github.com/ddo0S2)|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/WEB">WEB</a>|
 |[송수민](https://github.com/songtogether)|<a href="https://github.com/wing0529/GRED_Detection_Device/tree/Chur/3DModeling">3D Modeling </a> & Finance💲|
 
 
